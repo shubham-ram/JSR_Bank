@@ -68,14 +68,14 @@ const updateBalance = async(_id, newBalance) =>{
     }
     
 }
-
+// console.log(moment().utcOffset(330).format('Do MMMM YYYY, h:mm:ss a'));
 function addTransactionHistory(s,r,a){
 
     const history = new Transaction({
         sender: s,
         receiver: r,
         amount: a,
-        date: moment().format('Do MMMM YYYY, h:mm:ss a')
+        date: moment().utcOffset(330).format('Do MMMM YYYY, h:mm:ss a')
     });
     
     history.save((err, result) =>{
