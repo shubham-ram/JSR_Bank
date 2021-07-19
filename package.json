@@ -1,0 +1,19 @@
+{
+  "name": "tsf2",
+  "version": "1.0.0",
+  "description": "TASK 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Ram",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.2"
+  }
+}

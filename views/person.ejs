@@ -1,0 +1,22 @@
+<%- include("../partials/header")%>
+
+    <div class="card">
+        <div class="card-info">
+            <div class="profile-pic">
+                <img src="img/bijnes.png" alt="" >
+            </div>
+            <div class="description">
+                <h1><%= person.name%></h1>
+                <p><%= person.accNum%></p>
+                <p><%= person.email%></p>
+             
+            
+                <div class="cta">
+                    <p>₹ <%= person.balance%></p>
+                    <a href="/transferMoney">Transfer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

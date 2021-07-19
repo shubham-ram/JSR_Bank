@@ -1,0 +1,25 @@
+<%- include("../partials/header")%>
+
+    <div class="history ">
+        <table>
+            <tr>
+                <th>Sr.No.</th>
+                <th>Sender</th>
+                <th>Receiver</th>
+                <th>Amount</th>
+                <th>Date and Time</th>
+            </tr>
+
+            <% transactions.forEach( function(transaction,index){ %>
+                <tr>
+                    <td><%= index+1%></td>
+                    <td><%= transaction.sender%></td>
+                    <td><%= transaction.receiver%></td>
+                    <td><%= transaction.amount%></td>
+                    <td><%= transaction.date%></td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+</body>
+</html>
